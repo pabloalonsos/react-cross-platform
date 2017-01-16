@@ -5,6 +5,10 @@ React-Native + Electron + Web
 
 `npm install -g yarn react-native`
 
+For windows development:
+`brew cask install xquartz`
+`brew install wine`
+
 ## Commands
 * `yarn run web`
 * `yarn run ios`

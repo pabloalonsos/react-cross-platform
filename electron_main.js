@@ -15,7 +15,7 @@ function createWindow () {
         win.loadURL('http://localhost:8181')
     } else {
         win.loadURL(url.format({
-            pathname: path.join(__dirname, 'index.desktop.html'),
+            pathname: path.join(__dirname, './app/index.html'),
             protocol: 'file:',
             slashes: true
         }));
