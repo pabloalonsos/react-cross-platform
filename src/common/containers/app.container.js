@@ -9,6 +9,10 @@ export default class App extends Component {
         return (
             <View>
                 <Text>This is Sparta!!</Text>
+                <Text>This is Sparta!!</Text>
+                <Text>This is Sparta!!</Text>
+                <Text>This is Sparta!!</Text>
+                <Text>This is Sparta!!</Text>
             </View>
         );
     }

@@ -12,12 +12,12 @@ module.exports = {
     ],
     output: {
         filename: 'main.js',
-        path: resolve(__dirname, 'dist'),
+        path: resolve(__dirname, 'build'),
         publicPath: '/'
     },
     devServer: {
         hot: true,
-        contentBase: resolve(__dirname, 'dist'),
+        contentBase: resolve(__dirname, 'build'),
         publicPath: '/'
     },
     module: {

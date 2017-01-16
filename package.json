@@ -3,6 +3,8 @@
     "version": "0.0.1",
     "main": "electron_main.js",
     "private": true,
+    "description": "Reat Cross Platform",
+    "author": "Pablo Alonso <@pabloalonsos>",
     "bin": {
         "electron": "./node_modules/.bin/electron"
     },
@@ -11,8 +13,10 @@
         "test": "jest",
         "ios": "react-native run-ios",
         "web": "open http://localhost:8080 && webpack-dev-server --config webpack.web.config.js",
+        "electron": "NODE_ENV=development electron ./electron_main",
         "electron-dev-server": "webpack-dev-server --config webpack.electron.config.js",
-        "electron": "NODE_ENV=development electron electron_main"
+
+        "electron-build": "webpack -p --config webpack.electron.prod.config.js && ./node_modules/.bin/build"
     },
     "dependencies": {
         "react": "~15.4.0-rc.4",
@@ -32,6 +36,8 @@
         "babel-preset-stage-0": "latest",
         "css-loader": "latest",
         "electron": "^1.4.14",
+        "electron-builder": "^11.3.0",
+        "electron-packager": "^8.5.0",
         "html-webpack-plugin": "latest",
         "jest": "18.1.0",
         "postcss-loader": "latest",
@@ -45,5 +51,21 @@
     },
     "jest": {
         "preset": "react-native"
+    },
+    "build": {
+        "dmg": {
+            "contents": [
+                {
+                    "x": 110,
+                    "y": 150
+                },
+                {
+                    "x": 240,
+                    "y": 150,
+                    "type": "link",
+                    "path": "/Applications"
+                }
+            ]
+        }
     }
 }
