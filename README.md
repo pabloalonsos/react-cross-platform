@@ -3,7 +3,7 @@ React-Native + Electron + Web
 
 ## Set Up
 
-`npm install -g yarn react-native`
+`npm install -g yarn react-native-cli`
 
 For windows development:
 `brew cask install xquartz`
